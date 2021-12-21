@@ -26,7 +26,7 @@ docker run \
     --detach \
     --restart=on-failure:1 \
     --tty \
-    --publish=6443/TCP \
+    --publish=6443:6443/TCP \
     quay.io/brightzheng100/k8s-haproxy:2.1.7-alpine
 
 # Spin up the Kubernetes nodes
